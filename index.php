@@ -65,39 +65,44 @@ $hotels = [
         </ul>
     <?php endforeach; ?>
 
-<!-- TABLE -->
+    <!-- TABLE -->
 
-<table class="table p-5">
-  <thead>
-    <tr>
-    <?php foreach ($hotels as $hotel) : ?>
-      <th scope="col"><?php echo $hotel['name'] ?></th>
-      <?php endforeach; ?>   
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <?php foreach ($hotels as $hotel) : ?>
-      <td scope="col"><?php echo $hotel['description'] ?></td>
-      <?php endforeach; ?>
-    </tr>
-    <tr>
-    <?php foreach ($hotels as $hotel) : ?>
-      <td scope="col"><?php echo $hotel['parking'] ?></td>
-      <?php endforeach; ?>
-    </tr>
-    <tr>
-    <?php foreach ($hotels as $hotel) : ?>
-      <td scope="col"><?php echo $hotel['vote'] ?></td>
-      <?php endforeach; ?>
-    </tr>
-    <tr>
-    <?php foreach ($hotels as $hotel) : ?>
-      <td scope="col"><?php echo $hotel['distance_to_center'] ?></td>
-      <?php endforeach; ?>
-    </tr>
-  </tbody>
-</table>
+    <table class="table p-5">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <th scope="col"><?php echo $hotel['name'] ?></th>
+                <?php endforeach; ?>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Description</th>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <td scope="col"><?php echo $hotel['description'] ?></td>
+                <?php endforeach; ?>
+            </tr>
+            <tr>
+                <th>Parking</th>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <td scope="col"><?php echo $hotel['parking'] ?></td>
+                <?php endforeach; ?>
+            </tr>
+            <tr>
+                <th>Vote</th>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <td scope="col"><?php echo $hotel['vote'] ?></td>
+                <?php endforeach; ?>
+            </tr>
+            <tr>
+                <th>Ditance To Center</th>
+                <?php foreach ($hotels as $hotel) : ?>
+                    <td scope="col"><?php echo $hotel['distance_to_center'] ?></td>
+                <?php endforeach; ?>
+            </tr>
+        </tbody>
+    </table>
 
 
 
